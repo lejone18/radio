@@ -1,0 +1,699 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Additional styles for specific pages */
+
+/* Homepage */
+.intro {
+    text-align: center;
+}
+
+.upcoming-shows {
+    margin-top: 30px;
+}
+
+.featured-hosts {
+    margin-top: 30px;
+}
+
+.live-stream {
+    margin-top: 30px;
+}
+
+/* Shows Page */
+.show-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.show-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.show-card h3 {
+    margin-top: 10px;
+}
+
+.show-card p {
+    margin-top: 5px;
+}
+
+/* Show Detail Page */
+.show-details {
+    padding: 20px;
+}
+
+.show-details h2 {
+    margin-bottom: 10px;
+}
+
+.show-details .host-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.show-details .host-info img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Hosts Page */
+.host-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.host-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.host-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Feedback Page */
+.feedback-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.feedback-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+/* Styling for show details */
+.show-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    margin-bottom: 30px;
+}
+
+.show-details h2 {
+    color: #333;
+    font-size: 24px; /* Larger font size for headings */
+    margin-bottom: 15px;
+}
+
+.show-details .host-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.show-details .host-info img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.show-details p {
+    color: #555;
+    font-size: 16px; /* Font size for regular text */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+/* Styling for rating comments */
+.rating-comments {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.rating-comments h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.rating-comments .comment {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.rating-comments .comment p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.rating-comments .rating {
+    color: #ffd700; /* Gold color for stars */
+    font-size: 24px;
+}
+
+/* Styling for upcoming shows */
+.upcoming-shows {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.upcoming-shows h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.upcoming-shows .show {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.upcoming-shows .show img {
+    max-width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.upcoming-shows .show-details {
+    flex-grow: 1;
+}
+
+.upcoming-shows .show-details h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.upcoming-shows .show-details p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Styling for upcoming comments */
+.upcoming-comments {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.upcoming-comments h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.upcoming-comments label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.upcoming-comments input[type="text"],
+.upcoming-comments input[type="email"],
+.upcoming-comments textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.upcoming-comments input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.upcoming-comments input[type="submit"]:hover {
+    background-color: #555;
+}
+
+main .donation-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.donation-options h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.donation-options .payment-methods,
+.donation-options .donation-types,
+.donation-options .presenter-vote,
+.donation-options .comment-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.payment-methods h3,
+.donation-types h3,
+.presenter-vote h3,
+.comment-section h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.payment-methods ul,
+.donation-types ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.payment-methods ul li,
+.donation-types ul li {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #555;
+    border-bottom: 1px solid #ccc;
+}
+
+.presenter-vote select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.presenter-vote button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.presenter-vote button:hover {
+    background-color: #555;
+}
+
+.comment-section label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comment-section textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.comment-section input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.comment-section input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Styles for the People in Need section */
+.personal-details {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.personal-details h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.details-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    flex: 1 1 45%; /* Adjust width as needed */
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.detail-item label {
+    display: block;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.detail-item input[type="text"],
+.detail-item select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.detail-item input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.detail-item input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.people-in-need {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.people-in-need .donation-types h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.people-in-need .donation-types ul li {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #555;
+    border-bottom: 1px solid #ccc;
+}
+.radio-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.radio-card h3 {
+    margin: 0;
+}
+.play-button {
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+.play-button:hover {
+    color: #0056b3;
+}
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+.live-stream-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.live-stream-list li {
+    margin-bottom: 15px;
+}
+
+.live-stream-list a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.live-stream-list a:hover {
+    background-color: #0056b3;
+}
+
+.live-stream-list a i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.station-name {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.station-name, .live-stream-list a {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Customize the icon color */
+.live-stream-list a i {
+    color: #fff;
+}
+
+/* Technological icon style */
+.live-stream-list a i.fas.fa-play-circle:before {
+    content: "\f144"; /* Unicode for play icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.shows-adverts {
+    margin-top: 20px;
+}
+
+.show-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.show-card h3 {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.show-card audio {
+    width: 200px; /* Adjust width as needed */
+    margin-left: 20px;
+}
+
+/* Customize audio player controls */
+audio {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: transparent;
+    color: #007bff;
+    border-radius: 5px;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+audio::-webkit-media-controls-volume-slider-container {
+    display: none; /* Hide volume control for simplicity */
+}
+
+.donation-page {
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+.donation-options {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.donation-options h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.donation-options h3 {
+    margin-top: 20px;
+    color: #333333;
+}
+.donation-options ul {
+    list-style: none;
+    padding: 0;
+}
+.donation-options ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.donation-options ul li:hover {
+    background-color: #e2e6ea;
+}
+.presenter-vote, .comment-section, .personal-details {
+    margin-top: 30px;
+}
+.comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+.comment-section input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comment-section input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.personal-details .detail-item {
+    margin-bottom: 15px;
+}
+.personal-details label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+.personal-details input, .personal-details select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+.typewriter h3, .typewriter p {
+    display: inline-block;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.typewriter h3, .typewriter p {
+    animation: typing 5s steps(40, end) infinite, blink-caret .75s step-end infinite;
+}

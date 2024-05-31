@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Radio Station</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Radio Station</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home <i class="fas fa-home"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="shows.html">Shows <i class="fas fa-tv"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="show-detail.html">Show Detail <i class="fas fa-info"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback <i class="fas fa-comment"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="donate.html">Donate <i class="fas fa-donate"></i></a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="feedback-form">
+            <h2 class="text-center">Feedback for Radio Stations</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="name"><i class="fas fa-user"></i> Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="station"><i class="fas fa-broadcast-tower"></i> Select Radio Station:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="station" id="station1" value="Station 1" required>
+                        <label class="form-check-label" for="station1">
+                            MoAfrika_FM
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="station" id="station2" value="Station 2">
+                        <label class="form-check-label" for="station2">
+                            Molisa_ea_Molemo_FM
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="station" id="station3" value="Station 3">
+                        <label class="form-check-label" for="station3">
+                            Harvest_FM
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="station" id="station4" value="Station 4">
+                        <label class="form-check-label" for="station4">
+                            Bokamoso
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="station" id="station5" value="Station 5">
+                        <label class="form-check-label" for="station5">
+                            PC FM
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="station" id="station5" value="Station 5">
+                        <label class="form-check-label" for="station5">
+                            Tsenolo FM
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="station" id="station5" value="Station 5">
+                        <label class="form-check-label" for="station5">
+                            Ultimate 
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="message"><i class="fas fa-comment-alt"></i> Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="input-group">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Radio Station. All rights reserved.</p>
+        <section class="social-icons text-center my-4">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

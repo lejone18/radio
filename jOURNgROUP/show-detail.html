@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Detail - Radio Station</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Radio Station</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home <i class="fas fa-home"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="shows.html">Shows <i class="fas fa-tv"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="show-detail.html">Show Detail <i class="fas fa-info"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback <i class="fas fa-comment"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="donate.html">Donate <i class="fas fa-donate"></i></a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="show-details">
+            <h2>Show Name: BKMS BREAKFAST</h2>
+            <div class="host-info">
+                <img src="unkle.jpg" alt="Host Name">
+                <h3>Host Name: Unkle Benzy</h3>
+            </div>
+            <p>Show Description: "[LIVE PERFORMANCE]: By Unkle Benzy Music on #BKMSBreakfast☕️ with Miss-E from 08:30 - 09:00am"</p>
+            <p>For More info: <a href="https://web.facebook.com/photo/?fbid=441770708603769&set=pb.100083125302751.-2207520000">Click</a></p>
+            <!-- More show details here -->
+        </section>
+
+        <section class="rating-comments">
+            <h2>Rating & Comments of Past Shows</h2>
+            <div class="comment">
+                <p>User Comment</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <!-- More comments here -->
+        </section>
+
+        <!-- Details of upcoming shows -->
+        <section class="upcoming-shows">
+            <h2>Upcoming Shows</h2>
+            <div class="show">
+                <img src="dj saucy.jpg" alt="Show Poster">
+                <div class="show-details">
+                    <h3>Show Name: Friday Lounge</h3>
+                    <p>Date & Time : 21:00 - 00:00</p>
+                    <p>Guests: Thato DJ-Thandogg Morapeli</p>
+                    <p>Description: [ON AIR]: Catch Saucy DJ on #FridayLounge with Thato DJ-Thandogg Morapeli from 9pm - 12pm.</p>
+                    <p>Time Slot</p>
+                    <p>For more info: <a href="https://www.facebook.com/100083125302751/posts/441768788603961/?mibextid=nb1MFm3jZYALyyMy">Click</a></p>
+                </div>
+            </div>
+            <div class="show">
+                <img src="african day.jpg" alt="Show Poster">
+                <div class="show-details">
+                    <h3>Show Name: Africa Day</h3>
+                    <p>Date & Time : 25 May 2024</p>
+                    <p>Description: [CELEBRATION]: Happy Africa Day! 🌍 Celebrated annually on May 25th, Africa Day commemorates the founding of the Organization of African Unity in 1963. It's a time to celebrate African unity, culture, and progress. #AfricaDay #UnityInDiversity</p>
+                    <p>For more info: <a href="https://web.facebook.com/photo?fbid=442155971898576&set=a.126066150174228">Click</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-comments">
+            <h2>Comments on Upcoming Shows</h2>
+            <form action="#" method="POST">
+                <label for="name"><i class="fas fa-user"></i> Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email"><i class="fas fa-envelope"></i> Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="comment"><i class="fas fa-comment-alt"></i> Your Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Radio Station. All rights reserved.</p>
+        <section class="social-icons text-center my-4">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
